@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 3rem 5% 3rem 5%;
+    height: 100vh;
+    background: radial-gradient(ellipse at left, #F9CEEE, #CCF3EE, #F9F3EE, transparent), radial-gradient(ellipse at right, #20B2AA, #FFF0F5, #98FB98, transparent);
+    background-size: 400% 400%;
+    animation: prettyNiceBG 8s ease-in-out infinite;
+}
+@keyframes prettyNiceBG {
+0%{background-position: 0 50%}
+50%{background-position: 100% 100%}
+100%{background-position: 0 50%}
+}
+section .promotion{
+    display: flex;
+    background-image: url("Assets/unsplashSucculent2.jpg");
+    background-position: center;
+    width: 100rem;
+    height: 15rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    align-items: start;
+    gap: 3rem;
+    filter: drop-shadow(10px 30px 20px rgba(0,0,0,.50));
+    text-shadow: 0 0 15px black;
+    overflow: hidden;
+    justify-content: center;
+}
+h1{
+    font-size: 7rem;
+    font-weight: bold;
+    margin: 2rem 2rem 2rem 2rem;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    animation: attention 2.3s infinite ease-in-out;
+    align-self: center;
+}
+@keyframes attention{
+    30%{
+        transform: scale3d(1, 0.7, 0.3);
+        filter: drop-shadow(10px 30px 15px rgba(0,0,0,.60));
+    }
+    70%{
+        transform: translate3d(3px, 7px, 10px);
+        filter: drop-shadow(20px 30px 10px rgba(0,0,0,.60));
+    }
+}
+h1:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+.card{
+    display: flex;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 1.5rem;
+    filter: drop-shadow(10px 30px 20px rgba(0,0,0,.25));
+}
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 35rem;
+}
+.card li{
+    font-size: 2rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 2rem 2rem 2rem 2rem;
+}
+p{
+    font-size: 2rem;
+    margin: 2rem 2rem 2rem 2rem;
+    align-self: center;
+    font-weight: normal;
+    filter: drop-shadow(10px 30px 15px rgba(0,0,0,.75))
+}
+header > img{
+    display: block;
+    width: 15rem;
+    margin:1rem auto 1rem auto;
+}
+nav{
+    background-color: darkgreen;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+}
+nav li:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+section{
+    display: flex;
+}
+article{
+    flex: 1;
+}
+button{
+    font-size: 3rem;
+    font-weight: bold;
+    align-items: flex-end;
+
+}
+button:hover{
+    box-shadow: 1rem 1rem 1rem 1rem darkgreen;
+    transition:  500ms ease-out;
+
+} button:visited{
+    color: indigo;
+  }
+footer{
+    display: flex;
+    border-top: double rgba(0, 0, 0, 0.25);
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer div{
+    flex: 1;
+    margin: 2rem 2rem 2rem 2rem;
+}
+div > img{
+    width: 5rem;
+}
+div > p{
+    text-align: end;
+}
+
+
+
+
